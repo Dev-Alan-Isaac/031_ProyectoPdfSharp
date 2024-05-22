@@ -28,8 +28,6 @@ namespace Proyecto
             SaveFileDialog savefile = new SaveFileDialog();
             savefile.FileName = string.Format("{0}.pdf", DateTime.Now.ToString("ddMMyyyyHHmmss"));
 
-            
-
             //string PaginaHTML_Texto = "<table border=\"1\"><tr><td>HOLA MUNDO</td></tr></table>";
             string PaginaHTML_Texto = Properties.Resources.Plantilla.ToString();
             PaginaHTML_Texto = PaginaHTML_Texto.Replace("@CLIENTE", txtnombres.Text);
