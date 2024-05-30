@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|c:\\users\\alan_\\source\\repos\\clone\\031_proyectopdfsharp\\proyectopdf\\proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|C:\\Users\\alan_\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Proyecto\\Form1.cs",
               "ToolTip": "C:\\Users\\alan_\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs",
               "RelativeToolTip": "Proyecto\\Form1.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAnwB0AAAAAAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAnwDEAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T22:53:09.009Z",
               "EditorCaption": ""
@@ -50,8 +50,7 @@
               "ToolTip": "C:\\Users\\alan_\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Proyecto\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T22:51:01.767Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-21T22:51:01.767Z"
             }
           ]
         }

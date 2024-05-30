@@ -48,8 +48,6 @@ namespace Proyecto
             }
             PaginaHTML_Texto = PaginaHTML_Texto.Replace("@FILAS", filas);
             PaginaHTML_Texto = PaginaHTML_Texto.Replace("@TOTAL", total.ToString());
-           
-
 
             if (savefile.ShowDialog() == DialogResult.OK)
             {
