@@ -100,7 +100,6 @@
     <Content Include="Resources\icons8-preview-pane-96.png" />
     <Content Include="Resources\icons8-print-96.png" />
     <Content Include="Resources\icons8-save-96.png" />
-    <Content Include="Resources\icons8-smartphone-64.png" />
     <Content Include="Resources\shop_Logo.png" />
     <Content Include="Resources\Stylesheet.css" />
   </ItemGroup>

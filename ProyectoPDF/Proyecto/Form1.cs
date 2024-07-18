@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Proyecto
@@ -49,5 +51,22 @@ namespace Proyecto
             }
         }
 
+        private void button_Preview_Click(object sender, EventArgs e)
+        {
+            string htmlFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Index.html");
+
+            // Open the HTML file in the default browser
+            Process.Start(htmlFilePath);
+        }
+
+        private void button_Saved_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Print_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

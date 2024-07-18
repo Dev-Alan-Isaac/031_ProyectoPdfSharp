@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -316,6 +316,7 @@
             this.button_Print.Size = new System.Drawing.Size(75, 83);
             this.button_Print.TabIndex = 2;
             this.button_Print.UseVisualStyleBackColor = true;
+            this.button_Print.Click += new System.EventHandler(this.button_Print_Click);
             // 
             // button_Saved
             // 
@@ -326,6 +327,7 @@
             this.button_Saved.Size = new System.Drawing.Size(75, 83);
             this.button_Saved.TabIndex = 1;
             this.button_Saved.UseVisualStyleBackColor = true;
+            this.button_Saved.Click += new System.EventHandler(this.button_Saved_Click);
             // 
             // button_Preview
             // 
@@ -336,6 +338,7 @@
             this.button_Preview.Size = new System.Drawing.Size(75, 83);
             this.button_Preview.TabIndex = 0;
             this.button_Preview.UseVisualStyleBackColor = true;
+            this.button_Preview.Click += new System.EventHandler(this.button_Preview_Click);
             // 
             // pictureBox1
             // 
@@ -380,8 +383,8 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(951, 470);
             this.dataGridView1.TabIndex = 2;
