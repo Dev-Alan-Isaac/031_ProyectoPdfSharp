@@ -54,35 +54,40 @@ namespace Proyecto
 
         private void button_Preview_Click(object sender, EventArgs e)
         {
-            string HTMLTemplated = Properties.Resources.Index;
-            Bitmap Image = Properties.Resources.shop_Logo;
-            string base64ImageRepresentation = string.Empty;
-            // Convert the image to a byte array
-            using (MemoryStream m = new MemoryStream())
+            if (!string.IsNullOrEmpty(textBox_Client.Text) && !string.IsNullOrEmpty(textBox_Employee.Text))
             {
-                Image.Save(m, Image.RawFormat);
-                byte[] imageBytes = m.ToArray();
+                string HTMLTemplated = Properties.Resources.Index;
+                Bitmap Image = Properties.Resources.shop_Logo;
+                string base64ImageRepresentation = string.Empty;
+                // Convert the image to a byte array
+                using (MemoryStream m = new MemoryStream())
+                {
+                    Image.Save(m, Image.RawFormat);
+                    byte[] imageBytes = m.ToArray();
 
-                // Convert byte[] to Base64 string
-                base64ImageRepresentation = Convert.ToBase64String(imageBytes);
+                    // Convert byte[] to Base64 string
+                    base64ImageRepresentation = Convert.ToBase64String(imageBytes);
+                }
+
+                HTMLTemplated = HTMLTemplated.Replace("@Client", textBox_Client.Text);
+                HTMLTemplated = HTMLTemplated.Replace("@Employee", textBox_Employee.Text);
+                HTMLTemplated = HTMLTemplated.Replace("@BASE64", base64ImageRepresentation);
+                HTMLTemplated = HTMLTemplated.Replace("@Date", DateTime.Now.ToString());
+
+                // Specify the path to save the HTML file
+                string filePath = Path.Combine(Path.GetTempPath(), "invoice.html");
+
+                // Write the HTML content to the file
+                File.WriteAllText(filePath, HTMLTemplated);
+
+                // Open the HTML file in the default web browser
+                Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
             }
-
-            HTMLTemplated = HTMLTemplated.Replace("@Client", textBox_Client.Text);
-            HTMLTemplated = HTMLTemplated.Replace("@Employee", textBox_Employee.Text);
-            HTMLTemplated = HTMLTemplated.Replace("@BASE64", base64ImageRepresentation);
-            HTMLTemplated = HTMLTemplated.Replace("@Date", DateTime.Now.ToString());
-
-            // Specify the path to save the HTML file
-            string filePath = Path.Combine(Path.GetTempPath(), "invoice.html");
-
-            // Write the HTML content to the file
-            File.WriteAllText(filePath, HTMLTemplated);
-
-            // Open the HTML file in the default web browser
-            Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
+            else
+            {
+                MessageBox.Show("The client and employee are empty", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
-
-
 
         private void button_Saved_Click(object sender, EventArgs e)
         {
