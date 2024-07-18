@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox_Employee = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_Client = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.numericUpDown_Qty = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_Price = new System.Windows.Forms.NumericUpDown();
+            this.button_removeItem = new System.Windows.Forms.Button();
+            this.button_addItem = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Description = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_Item = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_Print = new System.Windows.Forms.Button();
+            this.button_Saved = new System.Windows.Forms.Button();
+            this.button_Preview = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -69,8 +69,8 @@
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Qty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Price)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -106,9 +106,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.textBox_Employee);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.textBox_Client);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox2.Location = new System.Drawing.Point(3, 56);
@@ -128,14 +128,14 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Employee:";
             // 
-            // textBox3
+            // textBox_Employee
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(9, 135);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(343, 24);
-            this.textBox3.TabIndex = 12;
+            this.textBox_Employee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_Employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Employee.Location = new System.Drawing.Point(9, 135);
+            this.textBox_Employee.Name = "textBox_Employee";
+            this.textBox_Employee.Size = new System.Drawing.Size(343, 24);
+            this.textBox_Employee.TabIndex = 12;
             // 
             // label2
             // 
@@ -147,27 +147,27 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Client:";
             // 
-            // textBox2
+            // textBox_Client
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(9, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(343, 24);
-            this.textBox2.TabIndex = 10;
+            this.textBox_Client.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_Client.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Client.Location = new System.Drawing.Point(9, 45);
+            this.textBox_Client.Name = "textBox_Client";
+            this.textBox_Client.Size = new System.Drawing.Size(343, 24);
+            this.textBox_Client.TabIndex = 10;
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.numericUpDown_Qty);
+            this.groupBox1.Controls.Add(this.numericUpDown_Price);
+            this.groupBox1.Controls.Add(this.button_removeItem);
+            this.groupBox1.Controls.Add(this.button_addItem);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.Description);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBox_Item);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Location = new System.Drawing.Point(3, 239);
@@ -177,59 +177,76 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Items";
             // 
-            // numericUpDown2
+            // numericUpDown_Qty
             // 
-            this.numericUpDown2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.numericUpDown_Qty.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown2.Location = new System.Drawing.Point(9, 149);
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.numericUpDown_Qty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDown_Qty.Location = new System.Drawing.Point(9, 149);
+            this.numericUpDown_Qty.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(343, 28);
-            this.numericUpDown2.TabIndex = 9;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.numericUpDown_Qty.Name = "numericUpDown_Qty";
+            this.numericUpDown_Qty.Size = new System.Drawing.Size(343, 28);
+            this.numericUpDown_Qty.TabIndex = 9;
+            this.numericUpDown_Qty.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // numericUpDown1
+            // numericUpDown_Price
             // 
-            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.numericUpDown_Price.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown1.Location = new System.Drawing.Point(9, 97);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(343, 28);
-            this.numericUpDown1.TabIndex = 8;
+            this.numericUpDown_Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDown_Price.Location = new System.Drawing.Point(9, 97);
+            this.numericUpDown_Price.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numericUpDown_Price.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_Price.Name = "numericUpDown_Price";
+            this.numericUpDown_Price.Size = new System.Drawing.Size(343, 28);
+            this.numericUpDown_Price.TabIndex = 8;
+            this.numericUpDown_Price.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
-            // button5
+            // button_removeItem
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button5.BackgroundImage = global::Proyecto.Properties.Resources.icons8_minus_96;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Location = new System.Drawing.Point(306, 192);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(45, 45);
-            this.button5.TabIndex = 7;
-            this.button5.UseVisualStyleBackColor = true;
+            this.button_removeItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button_removeItem.BackgroundImage = global::Proyecto.Properties.Resources.icons8_minus_96;
+            this.button_removeItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button_removeItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_removeItem.Location = new System.Drawing.Point(306, 192);
+            this.button_removeItem.Name = "button_removeItem";
+            this.button_removeItem.Size = new System.Drawing.Size(45, 45);
+            this.button_removeItem.TabIndex = 7;
+            this.button_removeItem.UseVisualStyleBackColor = true;
+            this.button_removeItem.Click += new System.EventHandler(this.button_removeItem_Click);
             // 
-            // button4
+            // button_addItem
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.BackgroundImage = global::Proyecto.Properties.Resources.icons8_add_96;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Location = new System.Drawing.Point(12, 192);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(45, 45);
-            this.button4.TabIndex = 6;
-            this.button4.UseVisualStyleBackColor = true;
+            this.button_addItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button_addItem.BackgroundImage = global::Proyecto.Properties.Resources.icons8_add_96;
+            this.button_addItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button_addItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_addItem.Location = new System.Drawing.Point(12, 192);
+            this.button_addItem.Name = "button_addItem";
+            this.button_addItem.Size = new System.Drawing.Size(45, 45);
+            this.button_addItem.TabIndex = 6;
+            this.button_addItem.UseVisualStyleBackColor = true;
+            this.button_addItem.Click += new System.EventHandler(this.button_addItem_Click);
             // 
             // label4
             // 
@@ -267,58 +284,58 @@
             this.Description.TabIndex = 1;
             this.Description.Text = "Item:";
             // 
-            // textBox1
+            // textBox_Item
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textBox_Item.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(9, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(343, 24);
-            this.textBox1.TabIndex = 0;
+            this.textBox_Item.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_Item.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Item.Location = new System.Drawing.Point(9, 49);
+            this.textBox_Item.Name = "textBox_Item";
+            this.textBox_Item.Size = new System.Drawing.Size(343, 24);
+            this.textBox_Item.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.button_Print);
+            this.panel3.Controls.Add(this.button_Saved);
+            this.panel3.Controls.Add(this.button_Preview);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 498);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(367, 89);
             this.panel3.TabIndex = 1;
             // 
-            // button3
+            // button_Print
             // 
-            this.button3.BackgroundImage = global::Proyecto.Properties.Resources.icons8_print_96;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(270, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 83);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_Print.BackgroundImage = global::Proyecto.Properties.Resources.icons8_print_96;
+            this.button_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Print.Location = new System.Drawing.Point(270, 3);
+            this.button_Print.Name = "button_Print";
+            this.button_Print.Size = new System.Drawing.Size(75, 83);
+            this.button_Print.TabIndex = 2;
+            this.button_Print.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button_Saved
             // 
-            this.button2.BackgroundImage = global::Proyecto.Properties.Resources.icons8_save_96;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(146, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 83);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_Saved.BackgroundImage = global::Proyecto.Properties.Resources.icons8_save_96;
+            this.button_Saved.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Saved.Location = new System.Drawing.Point(146, 3);
+            this.button_Saved.Name = "button_Saved";
+            this.button_Saved.Size = new System.Drawing.Size(75, 83);
+            this.button_Saved.TabIndex = 1;
+            this.button_Saved.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // button_Preview
             // 
-            this.button1.BackgroundImage = global::Proyecto.Properties.Resources.icons8_preview_pane_96;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(22, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 83);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_Preview.BackgroundImage = global::Proyecto.Properties.Resources.icons8_preview_pane_96;
+            this.button_Preview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Preview.Location = new System.Drawing.Point(22, 3);
+            this.button_Preview.Name = "button_Preview";
+            this.button_Preview.Size = new System.Drawing.Size(75, 83);
+            this.button_Preview.TabIndex = 0;
+            this.button_Preview.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -347,6 +364,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(140)))), ((int)(((byte)(155)))));
@@ -362,8 +380,8 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(951, 470);
             this.dataGridView1.TabIndex = 2;
@@ -484,15 +502,15 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Invoice Maker";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Qty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Price)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -510,23 +528,23 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_Print;
+        private System.Windows.Forms.Button button_Saved;
+        private System.Windows.Forms.Button button_Preview;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label Description;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_Item;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button button_removeItem;
+        private System.Windows.Forms.Button button_addItem;
+        private System.Windows.Forms.NumericUpDown numericUpDown_Qty;
+        private System.Windows.Forms.NumericUpDown numericUpDown_Price;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_Client;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem logsToolStripMenuItem;
@@ -542,7 +560,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PricePerUnit_Grid;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total_Grid;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox_Employee;
     }
 }
 
