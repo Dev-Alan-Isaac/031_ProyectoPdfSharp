@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -311,9 +312,9 @@
             // 
             this.button_Print.BackgroundImage = global::Proyecto.Properties.Resources.icons8_print_96;
             this.button_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Print.Location = new System.Drawing.Point(270, 3);
+            this.button_Print.Location = new System.Drawing.Point(270, 7);
             this.button_Print.Name = "button_Print";
-            this.button_Print.Size = new System.Drawing.Size(75, 83);
+            this.button_Print.Size = new System.Drawing.Size(75, 75);
             this.button_Print.TabIndex = 2;
             this.button_Print.UseVisualStyleBackColor = true;
             this.button_Print.Click += new System.EventHandler(this.button_Print_Click);
@@ -322,9 +323,9 @@
             // 
             this.button_Saved.BackgroundImage = global::Proyecto.Properties.Resources.icons8_save_96;
             this.button_Saved.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Saved.Location = new System.Drawing.Point(146, 3);
+            this.button_Saved.Location = new System.Drawing.Point(146, 7);
             this.button_Saved.Name = "button_Saved";
-            this.button_Saved.Size = new System.Drawing.Size(75, 83);
+            this.button_Saved.Size = new System.Drawing.Size(75, 75);
             this.button_Saved.TabIndex = 1;
             this.button_Saved.UseVisualStyleBackColor = true;
             this.button_Saved.Click += new System.EventHandler(this.button_Saved_Click);
@@ -333,9 +334,9 @@
             // 
             this.button_Preview.BackgroundImage = global::Proyecto.Properties.Resources.icons8_preview_pane_96;
             this.button_Preview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Preview.Location = new System.Drawing.Point(22, 3);
+            this.button_Preview.Location = new System.Drawing.Point(22, 7);
             this.button_Preview.Name = "button_Preview";
-            this.button_Preview.Size = new System.Drawing.Size(75, 83);
+            this.button_Preview.Size = new System.Drawing.Size(75, 75);
             this.button_Preview.TabIndex = 0;
             this.button_Preview.UseVisualStyleBackColor = true;
             this.button_Preview.Click += new System.EventHandler(this.button_Preview_Click);
@@ -383,8 +384,8 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(951, 470);
             this.dataGridView1.TabIndex = 2;
@@ -502,6 +503,7 @@
             this.ClientSize = new System.Drawing.Size(1318, 587);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";

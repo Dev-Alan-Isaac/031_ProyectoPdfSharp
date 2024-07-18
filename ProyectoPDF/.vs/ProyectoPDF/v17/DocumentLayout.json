@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|c:\\users\\sistemas\\source\\repos\\clone\\031_proyectopdfsharp\\proyectopdf\\proyecto\\resources\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\resources\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|c:\\users\\sistemas\\source\\repos\\clone\\031_proyectopdfsharp\\proyectopdf\\proyecto\\resources\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\resources\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:254354193:0:{71f361cc-493f-47c0-923f-f2570b6f8618}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto\\Form1.cs",
               "ToolTip": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs",
               "RelativeToolTip": "Proyecto\\Form1.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAC4AAAANAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T17:15:16.52Z",
               "IsPinned": true,
@@ -53,33 +69,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Index.html",
               "DocumentMoniker": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Resources\\Index.html",
               "RelativeDocumentMoniker": "Proyecto\\Resources\\Index.html",
               "ToolTip": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Resources\\Index.html",
               "RelativeToolTip": "Proyecto\\Resources\\Index.html",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAkwFUAAAA0AAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAkwFUAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-07-18T21:29:52.324Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:254354193:0:{71f361cc-493f-47c0-923f-f2570b6f8618}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }
