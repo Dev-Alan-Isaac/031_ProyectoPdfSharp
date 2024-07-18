@@ -12,3 +12,17 @@ D:\WorkSpaceAD\YOUTUBE\031_FUNCIONALIDAD GENERAR REPORTE\ProyectoPDF\Proyecto\ob
 D:\WorkSpaceAD\YOUTUBE\031_FUNCIONALIDAD GENERAR REPORTE\ProyectoPDF\Proyecto\obj\Debug\Proyecto.exe
 D:\WorkSpaceAD\YOUTUBE\031_FUNCIONALIDAD GENERAR REPORTE\ProyectoPDF\Proyecto\obj\Debug\Proyecto.pdb
 D:\WorkSpaceAD\YOUTUBE\031_FUNCIONALIDAD GENERAR REPORTE\ProyectoPDF\Proyecto\obj\Debug\Proyecto.csprojAssemblyReference.cache
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\bin\Debug\itextsharp.dll
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\bin\Debug\itextsharp.xml
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\obj\Debug\Proyecto.csproj.AssemblyReference.cache
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\obj\Debug\Proyecto.Properties.Resources.resources
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\obj\Debug\Proyecto.csproj.GenerateResource.cache
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\obj\Debug\Proyecto.csproj.Up2Date
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\obj\Debug\Proyecto.pdb

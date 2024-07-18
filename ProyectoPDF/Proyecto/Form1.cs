@@ -1,14 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
 using iTextSharp.text;
 using System.IO;
 using iTextSharp.text.pdf;
@@ -27,8 +18,6 @@ namespace Proyecto
         {
             SaveFileDialog savefile = new SaveFileDialog();
             savefile.FileName = string.Format("{0}.pdf", DateTime.Now.ToString("ddMMyyyyHHmmss"));
-
-            
 
             //string PaginaHTML_Texto = "<table border=\"1\"><tr><td>HOLA MUNDO</td></tr></table>";
             string PaginaHTML_Texto = Properties.Resources.Plantilla.ToString();
