@@ -61,29 +61,73 @@ namespace Proyecto.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_add_96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_minus_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_minus_96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_preview_pane_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_preview_pane_96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_print_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_print_96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_save_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_save_96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
-        ///&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+        ///&lt;html lang=&quot;en&quot;&gt;
         ///&lt;head&gt;
-        ///    &lt;title&gt;Title of the document&lt;/title&gt;
-        ///    &lt;style&gt;
-        ///        table.border {
-        ///            border-collapse: collapse;
-        ///        }
-        ///
-        ///            table.border th {
-        ///                padding: 5px;
-        ///                border: 1px solid black;
-        ///            }
-        ///
-        ///            table.border td {
-        ///                padding: 5px;
-        ///                border: 1px solid black;
-        ///            }
-        ///    &lt;/style&gt;
+        ///    &lt;meta charset=&quot;UTF-8&quot;&gt;
+        ///    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        ///    &lt;title&gt;Invoice Template&lt;/title&gt;
+        ///    &lt;link rel=&quot;stylesheet&quot; href=&quot;Stylesheet.css&quot;&gt;
         ///&lt;/head&gt;
         ///&lt;body&gt;
-        ///    &lt;table style=&quot;width:100%&quot;&gt;
-        ///        [rest of string was truncated]&quot;;.
+        ///    &lt;div class=&quot;invoice&quot;&gt;
+        ///        &lt;header&gt;
+        ///            &lt;div class=&quot;logo&quot;&gt;
+        ///                &lt;img src=&quot;shop_Logo.png&quot; alt=&quot;Ecomm Design&quot;&gt;
+        ///            &lt;/div&gt;
+        ///            &lt;div class=&quot;company-details&quot;&gt;
+        ///                &lt;h1&gt;Company Name&lt;/h1&gt;
+        ///                &lt;p&gt; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Plantilla {
             get {

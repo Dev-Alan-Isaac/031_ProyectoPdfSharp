@@ -94,5 +94,15 @@
   <ItemGroup>
     <None Include="Resources\shop.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-96.png" />
+    <Content Include="Resources\icons8-minus-96.png" />
+    <Content Include="Resources\icons8-preview-pane-96.png" />
+    <Content Include="Resources\icons8-print-96.png" />
+    <Content Include="Resources\icons8-save-96.png" />
+    <Content Include="Resources\icons8-smartphone-64.png" />
+    <Content Include="Resources\shop_Logo.png" />
+    <Content Include="Resources\Stylesheet.css" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

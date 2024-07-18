@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|c:\\users\\sistemas\\source\\repos\\clone\\031_proyectopdfsharp\\proyectopdf\\proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|c:\\users\\sistemas\\source\\repos\\clone\\031_proyectopdfsharp\\proyectopdf\\proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|c:\\users\\sistemas\\source\\repos\\clone\\031_proyectopdfsharp\\proyectopdf\\proyecto\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +39,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Proyecto\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.Designer.cs",
+              "RelativeToolTip": "Proyecto\\Form1.Designer.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAApwPYBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T18:05:51.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs",
+              "RelativeDocumentMoniker": "Proyecto\\Form1.cs",
+              "ToolTip": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs",
+              "RelativeToolTip": "Proyecto\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T17:15:16.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs",
+              "RelativeDocumentMoniker": "Proyecto\\Form1.cs",
+              "ToolTip": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs [Design]",
+              "RelativeToolTip": "Proyecto\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T17:27:23.562Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
