@@ -68,7 +68,6 @@
             background-color: #007bff;
             color: white;
         }
-
     </style>
 </head>
 <body>
@@ -104,23 +103,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Item Description 1</td>
-                    <td>$100.00</td>
-                    <td>$100.00</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Item Description 2</td>
-                    <td>$50.00</td>
-                    <td>$100.00</td>
-                </tr>
+                @Filas
             </tbody>
             <tfoot>
                 <tr>
                     <td colspan="3"><strong>Total</strong></td>
-                    <td><strong>$200.00</strong></td>
+                    <td><strong>$@TOTAL_Item</strong></td>
                 </tr>
             </tfoot>
         </table>

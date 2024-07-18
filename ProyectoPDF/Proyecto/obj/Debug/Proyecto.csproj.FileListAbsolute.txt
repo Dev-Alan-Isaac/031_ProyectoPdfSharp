@@ -26,3 +26,5 @@ C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\o
 C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\obj\Debug\Proyecto.csproj.Up2Date
 C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\obj\Debug\Proyecto.exe
 C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Sistemas\source\repos\Clone\031_ProyectoPdfSharp\ProyectoPDF\Proyecto\bin\Debug\Newtonsoft.Json.xml
