@@ -16,7 +16,7 @@ namespace Proyecto
         private void button_addItem_Click(object sender, EventArgs e)
         {
             // Get values from input controls
-            string client = textBox_Item.Text;
+            string item = textBox_Item.Text;
             int quantity = (int)numericUpDown_Qty.Value; // Cast to int
             decimal price = numericUpDown_Price.Value; // Cast to decimal
             decimal total = quantity * price;
@@ -24,7 +24,7 @@ namespace Proyecto
             // Assuming you have a DataGridView named dataGridView1
             // Create a new row and populate it
             DataGridViewRow newRow = new DataGridViewRow();
-            newRow.Cells.Add(new DataGridViewTextBoxCell { Value = client });
+            newRow.Cells.Add(new DataGridViewTextBoxCell { Value = item });
             newRow.Cells.Add(new DataGridViewTextBoxCell { Value = quantity });
             newRow.Cells.Add(new DataGridViewTextBoxCell { Value = price });
             newRow.Cells.Add(new DataGridViewTextBoxCell { Value = total });
@@ -53,11 +53,14 @@ namespace Proyecto
 
         private void button_Preview_Click(object sender, EventArgs e)
         {
-            string htmlFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Index.html");
+            string client = textBox_Client.Text;
+            string employee = textBox_Employee.Text;
 
-            // Open the HTML file in the default browser
-            Process.Start(htmlFilePath);
+            Preview form2 = new Preview(client, employee);
+            form2.Show();
         }
+
+
 
         private void button_Saved_Click(object sender, EventArgs e)
         {
@@ -67,6 +70,12 @@ namespace Proyecto
         private void button_Print_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private int JsonFolio()
+        {
+
+            return 0;
         }
     }
 }

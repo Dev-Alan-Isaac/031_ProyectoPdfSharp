@@ -117,21 +117,24 @@ namespace Proyecto.Properties {
         ///    &lt;meta charset=&quot;UTF-8&quot;&gt;
         ///    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
         ///    &lt;title&gt;Invoice Template&lt;/title&gt;
-        ///    &lt;link rel=&quot;stylesheet&quot; href=&quot;Stylesheet.css&quot;&gt;
-        ///&lt;/head&gt;
-        ///&lt;body&gt;
-        ///    &lt;div class=&quot;invoice&quot;&gt;
-        ///        &lt;header&gt;
-        ///            &lt;div class=&quot;logo&quot;&gt;
-        ///                &lt;img src=&quot;shop_Logo.png&quot; alt=&quot;Ecomm Design&quot;&gt;
-        ///            &lt;/div&gt;
-        ///            &lt;div class=&quot;company-details&quot;&gt;
-        ///                &lt;h1&gt;Company Name&lt;/h1&gt;
-        ///                &lt;p&gt; [rest of string was truncated]&quot;;.
+        ///    &lt;style&gt;
+        ///        body {
+        ///            font-family: Arial, sans-serif;
+        ///            margin: 0;
+        ///            padding: 0;
+        ///            background-color: #f8f9fa;
+        ///        }
+        ///
+        ///        .invoice {
+        ///            max-width: 800px;
+        ///            margin: 20px auto;
+        ///            padding: 20px;
+        ///            background-color: #ffffff;
+        ///  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Plantilla {
+        internal static string Index {
             get {
-                return ResourceManager.GetString("Plantilla", resourceCulture);
+                return ResourceManager.GetString("Index", resourceCulture);
             }
         }
         
@@ -141,6 +144,16 @@ namespace Proyecto.Properties {
         internal static System.Drawing.Bitmap shop {
             get {
                 object obj = ResourceManager.GetObject("shop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shop_Logo {
+            get {
+                object obj = ResourceManager.GetObject("shop_Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
