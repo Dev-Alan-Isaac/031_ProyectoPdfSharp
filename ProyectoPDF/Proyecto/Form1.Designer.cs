@@ -48,7 +48,6 @@
             this.textBox_Item = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button_Print = new System.Windows.Forms.Button();
-            this.button_Saved = new System.Windows.Forms.Button();
             this.button_Preview = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -313,7 +312,6 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.panel3.Controls.Add(this.button_Print);
-            this.panel3.Controls.Add(this.button_Saved);
             this.panel3.Controls.Add(this.button_Preview);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 498);
@@ -331,17 +329,6 @@
             this.button_Print.TabIndex = 2;
             this.button_Print.UseVisualStyleBackColor = true;
             this.button_Print.Click += new System.EventHandler(this.button_Print_Click);
-            // 
-            // button_Saved
-            // 
-            this.button_Saved.BackgroundImage = global::Proyecto.Properties.Resources.icons8_save_96;
-            this.button_Saved.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Saved.Location = new System.Drawing.Point(146, 7);
-            this.button_Saved.Name = "button_Saved";
-            this.button_Saved.Size = new System.Drawing.Size(75, 75);
-            this.button_Saved.TabIndex = 1;
-            this.button_Saved.UseVisualStyleBackColor = true;
-            this.button_Saved.Click += new System.EventHandler(this.button_Saved_Click);
             // 
             // button_Preview
             // 
@@ -572,7 +559,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button_Print;
-        private System.Windows.Forms.Button button_Saved;
         private System.Windows.Forms.Button button_Preview;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
