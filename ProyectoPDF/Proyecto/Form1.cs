@@ -302,6 +302,5 @@ namespace Proyecto
                 MessageBox.Show("No client", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
     }
 }

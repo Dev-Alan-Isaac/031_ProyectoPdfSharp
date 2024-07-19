@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|c:\\users\\sistemas\\source\\repos\\clone\\031_proyectopdfsharp\\proyectopdf\\proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|c:\\users\\sistemas\\source\\repos\\clone\\031_proyectopdfsharp\\proyectopdf\\proyecto\\resources\\saved.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\resources\\saved.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FA98137C-358A-43B4-8DCC-0D5E0C3A07B8}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,35 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs",
-              "RelativeDocumentMoniker": "Proyecto\\Form1.cs",
-              "ToolTip": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs [Design]*",
-              "RelativeToolTip": "Proyecto\\Form1.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T17:27:23.562Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs",
-              "RelativeDocumentMoniker": "Proyecto\\Form1.cs",
-              "ToolTip": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Form1.cs*",
-              "RelativeToolTip": "Proyecto\\Form1.cs*",
-              "ViewState": "AQIAAAcBAAAAAAAAAADgvxoBAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T22:46:12.179Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -66,19 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Saved.html",
-              "DocumentMoniker": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Resources\\Saved.html",
-              "RelativeDocumentMoniker": "Proyecto\\Resources\\Saved.html",
-              "ToolTip": "C:\\Users\\Sistemas\\source\\repos\\Clone\\031_ProyectoPdfSharp\\ProyectoPDF\\Proyecto\\Resources\\Saved.html",
-              "RelativeToolTip": "Proyecto\\Resources\\Saved.html",
-              "ViewState": "AQIAACYAAAAAAAAAAAAhwDQAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-07-19T23:08:34.796Z",
-              "EditorCaption": ""
             }
           ]
         }
