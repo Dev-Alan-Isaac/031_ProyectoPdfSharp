@@ -36,7 +36,8 @@ namespace Proyecto
 
             // Add the row to the DataGridView
             dataGridView1.Rows.Add(newRow);
-            UpdatedTotal();
+            decimal totla = UpdatedTotal();
+            label_PriceTotal.Text = "$" + totla.ToString();
         }
 
         private void button_removeItem_Click(object sender, EventArgs e)

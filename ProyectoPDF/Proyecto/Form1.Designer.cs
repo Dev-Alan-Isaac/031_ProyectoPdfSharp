@@ -58,6 +58,8 @@
             this.PricePerUnit_Grid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total_Grid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label_PriceTotal = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.logsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,8 +69,6 @@
             this.todayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.weekToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.monthToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -79,8 +79,8 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -110,6 +110,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.textBox_Employee);
             this.groupBox2.Controls.Add(this.label2);
@@ -165,6 +166,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox1.Controls.Add(this.numericUpDown_Qty);
             this.groupBox1.Controls.Add(this.numericUpDown_Price);
             this.groupBox1.Controls.Add(this.button_removeItem);
@@ -207,6 +209,7 @@
             this.numericUpDown_Price.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.numericUpDown_Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDown_Price.DecimalPlaces = 2;
             this.numericUpDown_Price.Location = new System.Drawing.Point(9, 97);
             this.numericUpDown_Price.Maximum = new decimal(new int[] {
             100000,
@@ -432,6 +435,27 @@
             this.panel4.Size = new System.Drawing.Size(951, 89);
             this.panel4.TabIndex = 0;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label_PriceTotal);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(752, 0);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(199, 89);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Total";
+            // 
+            // label_PriceTotal
+            // 
+            this.label_PriceTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_PriceTotal.Location = new System.Drawing.Point(6, 36);
+            this.label_PriceTotal.Name = "label_PriceTotal";
+            this.label_PriceTotal.Size = new System.Drawing.Size(187, 23);
+            this.label_PriceTotal.TabIndex = 0;
+            this.label_PriceTotal.Text = "$00.00";
+            // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -500,27 +524,6 @@
             this.monthToolStripMenuItem1.Size = new System.Drawing.Size(135, 26);
             this.monthToolStripMenuItem1.Text = "Month";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(752, 0);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(199, 89);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Total";
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 36);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(187, 23);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "$00.00";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -548,9 +551,9 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -595,7 +598,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox_Employee;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label_PriceTotal;
     }
 }
 
