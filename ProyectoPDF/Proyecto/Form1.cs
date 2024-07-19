@@ -1,4 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿using iTextSharp.text.pdf;
+using iTextSharp.text;
+using iTextSharp.tool.xml;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,6 +14,7 @@ namespace Proyecto
     public partial class Form1 : Form
     {
         Dictionary<string, string> jsonData = new Dictionary<string, string>();
+        string HTMLTemplated = Properties.Resources.Index;
 
         public Form1()
         {
@@ -60,65 +64,55 @@ namespace Proyecto
 
         private void button_Preview_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(textBox_Client.Text) && !string.IsNullOrEmpty(textBox_Employee.Text))
-            {
-                string HTMLTemplated = Properties.Resources.Index;
-                Bitmap Image = Properties.Resources.shop_Logo;
-                string base64ImageRepresentation = string.Empty;
-                // Convert the image to a byte array
-                using (MemoryStream m = new MemoryStream())
-                {
-                    Image.Save(m, Image.RawFormat);
-                    byte[] imageBytes = m.ToArray();
-
-                    // Convert byte[] to Base64 string
-                    base64ImageRepresentation = Convert.ToBase64String(imageBytes);
-                }
-                HTMLTemplated = HTMLTemplated.Replace("@Client", textBox_Client.Text);
-                HTMLTemplated = HTMLTemplated.Replace("@Employee", textBox_Employee.Text);
-                HTMLTemplated = HTMLTemplated.Replace("@BASE64", base64ImageRepresentation);
-                HTMLTemplated = HTMLTemplated.Replace("@Date", DateTime.Now.ToString("yyyy-MM-dd"));
-                HTMLTemplated = HTMLTemplated.Replace("@Date", DateTime.Now.ToString("yyyy-MM-dd"));
-
-                var (folio, invoice) = JsonReader($"Logs-{DateTime.Now.Year}.json");
-
-                folio.ToString();
-                invoice.ToString();
-
-                string filas = string.Empty;
-                decimal total = 0;
-                foreach (DataGridViewRow row in dataGridView1.Rows)
-                {
-                    filas += "<tr>";
-                    filas += "<td>" + row.Cells["Description_Grid"].Value.ToString() + "</td>";
-                    filas += "<td>" + row.Cells["Quantity_Grid"].Value.ToString() + "</td>";
-                    filas += "<td>" + row.Cells["PricePerUnit_Grid"].Value.ToString() + "</td>";
-                    filas += "<td>" + row.Cells["Total_Grid"].Value.ToString() + "</td>";
-                    filas += "</tr>";
-                    total += decimal.Parse(row.Cells["Total_Grid"].Value.ToString());
-                }
-                HTMLTemplated = HTMLTemplated.Replace("@Filas", filas);
-                HTMLTemplated = HTMLTemplated.Replace("@TOTAL_Item", total.ToString());
-
-
-                // Specify the path to save the HTML file
-                string filePath = Path.Combine(Path.GetTempPath(), "invoice.html");
-
-                // Write the HTML content to the file
-                File.WriteAllText(filePath, HTMLTemplated);
-
-                // Open the HTML file in the default web browser
-                Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
-            }
-            else
-            {
-                MessageBox.Show("The client and employee are empty", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            InvoiceMaker();
         }
 
         private void button_Saved_Click(object sender, EventArgs e)
         {
+            InvoiceMaker();
 
+            string NameFile = string.Format("{0}.pdf", DateTime.Now.ToString("ddMMyyyyHHmmss"));
+
+            // Create a SaveFileDialog to prompt the user for save location
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                saveFileDialog.Title = "Save PDF File";
+                saveFileDialog.FileName = NameFile; // Set the default file name
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Create a MemoryStream to hold the PDF content
+                    using (FileStream stream = new FileStream(NameFile, FileMode.Create))
+                    {
+                        //Creamos un nuevo documento y lo definimos como PDF
+                        Document pdfDoc = new Document(PageSize.A4, 25, 25, 25, 25);
+
+                        PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+                        pdfDoc.Open();
+                        pdfDoc.Add(new Phrase(""));
+
+                        //Agregamos la imagen del banner al documento
+                        iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(Properties.Resources.shop, System.Drawing.Imaging.ImageFormat.Png);
+                        img.ScaleToFit(60, 60);
+                        img.Alignment = iTextSharp.text.Image.UNDERLYING;
+
+                        //img.SetAbsolutePosition(10,100);
+                        img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 60);
+                        pdfDoc.Add(img);
+
+
+                        //pdfDoc.Add(new Phrase("Hola Mundo"));
+                        using (StringReader sr = new StringReader(HTMLTemplated))
+                        {
+                            XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                        }
+
+                        pdfDoc.Close();
+                        stream.Close();
+                    }
+                }
+            }
         }
 
         private void button_Print_Click(object sender, EventArgs e)
@@ -209,6 +203,63 @@ namespace Proyecto
                 total += decimal.Parse(row.Cells["Total_Grid"].Value.ToString());
             }
             return total;
+        }
+
+        private void InvoiceMaker()
+        {
+            if (!string.IsNullOrEmpty(textBox_Client.Text) && !string.IsNullOrEmpty(textBox_Employee.Text))
+            {
+                Bitmap Image = Properties.Resources.shop_Logo;
+                string base64ImageRepresentation = string.Empty;
+                // Convert the image to a byte array
+                using (MemoryStream m = new MemoryStream())
+                {
+                    Image.Save(m, Image.RawFormat);
+                    byte[] imageBytes = m.ToArray();
+
+                    // Convert byte[] to Base64 string
+                    base64ImageRepresentation = Convert.ToBase64String(imageBytes);
+                }
+                HTMLTemplated = HTMLTemplated.Replace("@Client", textBox_Client.Text);
+                HTMLTemplated = HTMLTemplated.Replace("@Employee", textBox_Employee.Text);
+                HTMLTemplated = HTMLTemplated.Replace("@BASE64", base64ImageRepresentation);
+                HTMLTemplated = HTMLTemplated.Replace("@Date", DateTime.Now.ToString("yyyy-MM-dd"));
+                HTMLTemplated = HTMLTemplated.Replace("@Date", DateTime.Now.ToString("yyyy-MM-dd"));
+
+                var (folio, invoice) = JsonReader($"Logs-{DateTime.Now.Year}.json");
+
+                folio.ToString();
+                invoice.ToString();
+
+                string filas = string.Empty;
+                decimal total = 0;
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    filas += "<tr>";
+                    filas += "<td>" + row.Cells["Description_Grid"].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells["Quantity_Grid"].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells["PricePerUnit_Grid"].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells["Total_Grid"].Value.ToString() + "</td>";
+                    filas += "</tr>";
+                    total += decimal.Parse(row.Cells["Total_Grid"].Value.ToString());
+                }
+                HTMLTemplated = HTMLTemplated.Replace("@Filas", filas);
+                HTMLTemplated = HTMLTemplated.Replace("@TOTAL_Item", total.ToString());
+
+
+                // Specify the path to save the HTML file
+                string filePath = Path.Combine(Path.GetTempPath(), "Invoice.html");
+
+                // Write the HTML content to the file
+                File.WriteAllText(filePath, HTMLTemplated);
+
+                // Open the HTML file in the default web browser
+                Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
+            }
+            else
+            {
+                MessageBox.Show("The client and employee are empty", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
